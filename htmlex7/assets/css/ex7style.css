@@ -1,20 +1,21 @@
-.font1{
+.test{
     background-color: blue;
     width: 80%;
-    height: 120px;
 }
-.fieldset1{
-    width: 20%;
-    height: 20px;
+.legend1{
     background-color: blue;
 }
-.font2{
-    width: 80%;
-    height: 160px;
+.legend2{
     background-color: blueviolet;
 }
-.font3{
-    width: 80%;
-    height: 160px;
+.legend3{
     background-color: pink;
+}
+.test2{
+    background-color: blueviolet;
+    width: 80%;
+}
+.test3{
+    background-color: pink;
+    width: 80%;
 }

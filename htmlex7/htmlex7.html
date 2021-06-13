@@ -11,38 +11,52 @@
 
 <body>
     <form method="post" action="traitement.php">
-        <div class="font1"><fieldset class="fieldset1">Votre identité</fieldset><label for="nom">1.Nom : </label>
+
+
+        <fieldset class="test">
+            <legend class="legend1"> Votre identité </legend>
+            <label for="nom">&nbsp;&nbsp;1.Nom : </label>
             <input type="text" name="nom" id="nom"><br>
 
-            <label for="prénom">2.Prénom : </label>
+            <label for="prénom">&nbsp;&nbsp;2.Prénom : </label>
             <input type="text" name="prénom" id="prénom"><br>
-            <label for="adressemail">3.Adresse mail</label>
+            <label for="adressemail">&nbsp;&nbsp;3.Adresse mail</label>
             <input type="text" name="adressemail" id="adressemail">
-    </form>
-</body>
-</div>
-<div class="font2"><label for="adresse">1.Adresse:</label>
-    <textarea name="adresse" id="adresse" cols="15" rows="5"></textarea><br>
-    <label for="codepostal">2.Code postal: </label>
-    <input type="text" name="codepostal" id="codepostal"><br>
-    <label for="ville">3.Ville</label>
-    <input type="text" name="ville" id="ville">
-</div>
-<div class="font3"><label for="typedecarte">1.Type de carte bancaire</label><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>
-        <input type="radio" name="visa" value="visa">
-        Visa</label><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>
-        <input type="radio" name="mastercard" value="mastercard">
-        Master card</label><br>
-    <label for="numerodecarte">2.Numéro de carte</label>
-    <input type="text"><br>
-    <label for="codedesecurite">3.Code de sécurité</label>
-    <input type="text"><br>
-    <label for="nomdutitu">4.Nom du titulaire</label>
-    <input type="text"></div>
-</form>
+        </fieldset>
 
+
+
+        <fieldset class="test2">
+            <legend class="legend2">Adresse de livraison</legend>
+            <label for="adresse">&nbsp;&nbsp;1.Adresse:</label>
+            <textarea name="adresse" id="adresse" cols="15" rows="5"></textarea><br>
+            <label for="codepostal">&nbsp;&nbsp;2.Code postal: </label>
+            <input type="text" name="codepostal" id="codepostal"><br>
+            <label for="ville">&nbsp;&nbsp;3.Ville</label>
+            <input type="text" name="ville" id="ville">
+        </fieldset>
+
+
+
+        <fieldset class="test3">
+            <legend class="legend3">Informations de réglement</legend><label for="typedecarte">&nbsp;&nbsp;1.Type de carte
+                bancaire</label><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="carte" value="visa" id="visa">
+            <label>Visa</label><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="carte" value="mastercard"
+                id="mastercard">
+            <label>Master card</label><br>
+            <label for="numerodecarte">&nbsp;&nbsp;2.Numéro de carte</label>
+            <input type="text"><br>
+            <label for="codedesecurite">&nbsp;&nbsp;3.Code de sécurité</label>
+            <input type="text"><br>
+            <label for="nomdutitu">&nbsp;&nbsp;4.Nom du titulaire</label>
+            <input type="text">
+        </fieldset>
+
+
+        <input type="button" value="J'achète!">
+    </form>
 
 </body>
 
