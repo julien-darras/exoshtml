@@ -1,0 +1,29 @@
+body{
+    font-family: 'Coming Soon', cursive;
+}
+
+/* ne pas oublier first et last child */
+
+ol>li li:nth-child(-n+2){
+    color: red;
+}
+ol>li li:last-child{
+    color: green;
+}
+ol>li:first-child{
+    color: blue;
+}
+ol>li:last-child{
+    color: gray;
+}
+ol>li:nth-child(1n+2) li{
+    color: black;
+}
+p span{
+    color: pink;
+}
+
+/* si plusieurs id , on peut par exemple faire ça */
+/* #header span{
+    color: red;
+} */
