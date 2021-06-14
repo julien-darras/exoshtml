@@ -16,24 +16,24 @@
         <fieldset class="test">
             <legend class="legend1"> Votre identité </legend>
             <label for="nom">&nbsp;&nbsp;1.Nom : </label>
-            <input type="text" name="nom" id="nom"><br>
+            <input type="text" name="nom" id="nom" value="Nom"><br>
 
             <label for="prénom">&nbsp;&nbsp;2.Prénom : </label>
-            <input type="text" name="prénom" id="prénom"><br>
+            <input type="text" name="prénom" id="prénom" value="Prénom"><br>
             <label for="adressemail">&nbsp;&nbsp;3.Adresse mail</label>
-            <input type="text" name="adressemail" id="adressemail">
+            <input type="email" name="adressemail" id="adressemail" value="Adresse mail">
         </fieldset>
 
 
-
+<!-- mettre classe à legend -->
         <fieldset class="test2">
             <legend class="legend2">Adresse de livraison</legend>
             <label for="adresse">&nbsp;&nbsp;1.Adresse:</label>
             <textarea name="adresse" id="adresse" cols="15" rows="5"></textarea><br>
             <label for="codepostal">&nbsp;&nbsp;2.Code postal: </label>
-            <input type="text" name="codepostal" id="codepostal"><br>
+            <input type="text" name="codepostal" id="codepostal" value="Code postal"><br>
             <label for="ville">&nbsp;&nbsp;3.Ville</label>
-            <input type="text" name="ville" id="ville">
+            <input type="text" name="ville" id="ville" value="Ville">
         </fieldset>
 
 
@@ -47,11 +47,11 @@
                 id="mastercard">
             <label>Master card</label><br>
             <label for="numerodecarte">&nbsp;&nbsp;2.Numéro de carte</label>
-            <input type="text"><br>
+            <input type="text" name="numerodecarte" id="numerodecarte" value="Numéro de carte"><br>
             <label for="codedesecurite">&nbsp;&nbsp;3.Code de sécurité</label>
-            <input type="text"><br>
+            <input type="text" name="codedesecurite" id="codedesecurite" value=" Code de sécurité"><br>
             <label for="nomdutitu">&nbsp;&nbsp;4.Nom du titulaire</label>
-            <input type="text">
+            <input type="text" name="nomdutitu" id="nomdutitu" value="Nom du titulaire">
         </fieldset>
 
 
