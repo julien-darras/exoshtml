@@ -10,52 +10,58 @@
 </head>
 
 <body>
-    <form>
+    <form method="POST" action="assets/img/commandevalidee.png">
 
-<!-- mettre une classe à fieldset -->
+        <!-- mettre une classe à fieldset -->
+        <!-- utiliser ol et li -->
         <fieldset class="test">
             <legend class="legend1"> Votre identité </legend>
-            <label for="nom">&nbsp;&nbsp;1.Nom : </label>
-            <input type="text" name="nom" id="nom" value="Nom"><br>
+            <ol>
+                <li><label for="lastname">Nom : </label>
+                    <input placeholder="Nom" type="text" name="lastname" id="lastname"></li>
 
-            <label for="prénom">&nbsp;&nbsp;2.Prénom : </label>
-            <input type="text" name="prénom" id="prénom" value="Prénom"><br>
-            <label for="adressemail">&nbsp;&nbsp;3.Adresse mail</label>
-            <input type="email" name="adressemail" id="adressemail" value="Adresse mail">
+                <li><label for="name">Prénom : </label>
+                    <input placeholder="Prénom" type="text" name="name" id="name"></li>
+                <li><label for="mail">Adresse mail</label>
+                    <input placeholder="Adresse mail" type="email" name="mail" id="mail"></li>
+            </ol>
         </fieldset>
 
 
-<!-- mettre classe à legend -->
+        <!-- mettre classe à legend -->
         <fieldset class="test2">
             <legend class="legend2">Adresse de livraison</legend>
-            <label for="adresse">&nbsp;&nbsp;1.Adresse:</label>
-            <textarea name="adresse" id="adresse" cols="15" rows="5"></textarea><br>
-            <label for="codepostal">&nbsp;&nbsp;2.Code postal: </label>
-            <input type="text" name="codepostal" id="codepostal" value="Code postal"><br>
-            <label for="ville">&nbsp;&nbsp;3.Ville</label>
-            <input type="text" name="ville" id="ville" value="Ville">
+            <ol>
+                <li><label for="adress">Adresse:</label>
+                    <textarea name="adress" id="adress" cols="15" rows="5"></textarea></li>
+                <li><label for="postalCode">Code postal: </label>
+                    <input placeholder="Code postal" type="text" name="postalCode" id="postalCode"></li>
+                <li><label for="city">Ville</label>
+                    <input placeholder="Ville" type="text" name="city" id="city"></li>
+            </ol>
         </fieldset>
 
 
 
         <fieldset class="test3">
-            <legend class="legend3">Informations de réglement</legend><label for="typedecarte">&nbsp;&nbsp;1.Type de carte
-                bancaire</label><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="carte" value="visa" id="visa">
-            <label>Visa</label><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="carte" value="mastercard"
-                id="mastercard">
-            <label>Master card</label><br>
-            <label for="numerodecarte">&nbsp;&nbsp;2.Numéro de carte</label>
-            <input type="text" name="numerodecarte" id="numerodecarte" value="Numéro de carte"><br>
-            <label for="codedesecurite">&nbsp;&nbsp;3.Code de sécurité</label>
-            <input type="text" name="codedesecurite" id="codedesecurite" value=" Code de sécurité"><br>
-            <label for="nomdutitu">&nbsp;&nbsp;4.Nom du titulaire</label>
-            <input type="text" name="nomdutitu" id="nomdutitu" value="Nom du titulaire">
+            <legend class="legend3">Informations de réglement</legend>
+            <ol>
+                <li><label>Type de carte bancaire</label>
+                    <div class="card"><input type="radio" name="card" value="visa" id="visa">Visa</div>
+
+                    <div class="card card2"><input checked type="radio" name="card" value="mastercard"
+                            id="mastercard">Master card</div>
+                </li>
+
+                <li><label for="cardNumber">Numéro de carte</label>
+                    <input type="text" name="cardNumber" id="cardNumber" placeholder="Numéro de carte"></li>
+                <li><label for="securityCode">Code de sécurité</label>
+                    <input type="text" name="securityCode" id="securityCode" placeholder=" Code de sécurité"></li>
+                <li><label for="ownerName">Nom du titulaire</label>
+                    <input type="text" name="ownerName" id="ownerName" placeholder="Nom du titulaire"></li>
+            </ol>
         </fieldset>
-
-
-        <input type="button" value="J'achète!">
+        <input type="submit" value="J'achète!">
     </form>
 
 </body>
